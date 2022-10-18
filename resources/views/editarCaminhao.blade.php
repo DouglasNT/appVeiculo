@@ -18,23 +18,26 @@
 </div>
 
 
-<table class="table">
+<table class="table table-dark table-striped">
   <thead>
     <tr>
       <th scope="col">Código</th>
       <th scope="col">Modelo</th>
       <th scope="col">Marca</th>
       <th scope="col">Ano</th>
+      <th scope="col">Cor</th>
       <th scope="col">Editar</th>
       <th scope="col">Excluir</th>
     </tr>
   </thead>
   <tbody>
+    @foreach($registrosCaminhao as $registrosCaminhaos)
     <tr>
-      <th scope="row">1</th>
-      <td>Serie 745LE</td>
-      <td>Scania</td>
-      <td>2022</td>
+      <th scope="row">{{$registrosCaminhaos->id}}</th>
+      <td>{{$registrosCaminhaos->modelos}}</td>
+      <td>{{$registrosCaminhaos->marca}}</td>
+      <td>{{$registrosCaminhaos->ano}}</td>
+      <td>{{$registrosCaminhaos->cor}}</td>
       <td>
             <button type="button" class="btn btn-primary">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
@@ -53,6 +56,7 @@
              </button>
       </td>
     </tr>
+    @endforeach
   </tbody>
 </table>
 

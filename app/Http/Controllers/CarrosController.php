@@ -13,7 +13,11 @@ class CarrosController extends Controller
     }
 
     public function EditarCarro(){
-        return view('editarCarro');
+        
+        $dadosCarros = Carros::all();
+        //dd($dadosCaminhao);
+        return view('editarCarro', ['registrosCarro' => $dadosCarros]);
+
     }
 
     public function SalvarBancoCarro(Request $request){
