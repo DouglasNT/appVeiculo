@@ -34,4 +34,17 @@ class CaminhaoController extends Controller
         return Redirect::route('home');
     }
 
+    public function ApagarBancoCaminhao(Caminhao $registrosCaminhaos){
+        
+        $registrosCaminhaos -> delete();
+        
+        return Redirect::route('editar-caminhao');
+    }
+
+    public function MostrarAlterarCaminhao(Caminhao $registrosCaminhaos){
+
+        return view('alterarCaminhao', ['registrosCaminhaos' => $registrosCaminhaos]);
+
+    }
+
 }
