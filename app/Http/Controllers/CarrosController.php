@@ -51,7 +51,7 @@ class CarrosController extends Controller
 
     public function MostrarAlterarCarro(Carros $registrosCarros){
         
-         return view('alterarCarro',['registrosCarro' => $registrosCarros]);
+         return view('alterarCarro',['registrosCarros' => $registrosCarros]);
  
      }
  
