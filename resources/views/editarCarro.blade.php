@@ -4,15 +4,17 @@
 
 <div class="container m-5" >
 
+<form method="get" action="/editar-carro">
 <div class="row center">
-  <div class="col">
-    <input type="text" class="form-control" placeholder="Digite a Marca do Carro" aria-label="First name">
+   <div class="col">
+    <input type="text" id="marca" name="marca" class="form-control" placeholder="Digite a Marca do Carro" aria-label="First name">
   </div>
 
-  <div class="col bi bi-search">
-  <button type="button" class="btn btn-info">Buscar</button>
+  <div class="col">
+  <button type="submit" class="btn btn-info">Buscar</button>
   </div>
-</div>
+  </div>
+</form>
 
 
 </div>
