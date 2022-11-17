@@ -56,5 +56,5 @@ jobs:
         with:
           app-name: 'laravelpi'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_65AADC054AFB473A836CE21A1C722AFB }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_5B306764E06149B79A67CA145382EB2D }}
           package: .
